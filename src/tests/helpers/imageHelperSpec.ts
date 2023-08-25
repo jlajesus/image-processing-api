@@ -9,7 +9,7 @@ const imagePathThumb = path.resolve(
   __dirname,
   '../../../file-images/thumb/fjord.jpg'
 );
-console.log('test1');
+
 describe('Test imageResizer function', (): void => {
   it('Test 1: rejects promise if something went wrong', async (): Promise<void> => {
     await expectAsync(

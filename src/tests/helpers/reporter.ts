@@ -1,7 +1,6 @@
 /*
  * Sample code used throughout the Udacity course
  */
-console.log('test2');
 import {
   DisplayProcessor,
   SpecReporter,

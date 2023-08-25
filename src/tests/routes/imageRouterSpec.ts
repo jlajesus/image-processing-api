@@ -12,7 +12,7 @@ describe('Test URL response', () => {
 
   it('Test 2:responds with 400, if width not passed', () => {
     request(app)
-      .get('/api/images?filename=fjord&height=100&width=')
+      .get('/api/images?filename=encenadaport&height=100&width=')
       .expect(400);
   });
 
@@ -24,7 +24,7 @@ describe('Test URL response', () => {
 
   it('Test 4:responds with 200, filename, heigh, and width passed', () => {
     request(app)
-      .get('/api/images?filename=fjord&height=100&width=100')
+      .get('/api/images?filename=encenadaport&height=100&width=100')
       .expect(200);
   });
 });
@@ -32,12 +32,12 @@ describe('Test URL response', () => {
 describe('Test thumb folder (image copy)', () => {
   it('Test 1: creat image copy with the correct height and width', () => {
     request(app)
-      .get('/api/images?filename=fjord&height=300&width=300')
+      .get('/api/images?filename=encenadaport&height=300&width=300')
       .then(() => {
         const dimensions = sizeOf(
           path.resolve(
             __dirname,
-            '../../../file-images/thumb/fjord-300x300.jpg'
+            '../../../file-images/thumb/encenadaport-300x300.jpg'
           )
         );
         expect(dimensions.height).toEqual(100);
@@ -46,12 +46,12 @@ describe('Test thumb folder (image copy)', () => {
   });
   it('Test 2:creat a copy version of the image in thumb folder', () => {
     request(app)
-      .get('/api/images?filename=fjord&height=200&width=200')
+      .get('/api/images?filename=encenadaport&height=200&width=200')
       .then(() => {
         fs.stat(
           path.resolve(
             __dirname,
-            '../../../file-images/thumb/fjord-200x200.jpg'
+            '../../../file-images/thumb/encenadaport-200x200.jpg'
           )
         ).then((fileStat: Stats) => expect(fileStat).not.toBeNull());
       });
