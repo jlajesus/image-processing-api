@@ -4,13 +4,13 @@ End user can pass a file name, image hight and widtt ti display the image.
 
 ## To start the project follow the following steps:
 ### 1. Install [Node JS](https://nodejs.org/en) on your machine. 
-### 2. Run all the following command's to start the server.
-- Install Dependencies: npm install
-- Build: npm run build
-- Prettify: npm run prettify
-- Lint: npm run lint
-- Run unit tests: npm run test
-- Start server: npm run start 
+### 2. Run all the following command's in order to start the server.
+1. Install Dependencies: <pre><code> npm install </code></pre>
+3. Build: <pre><code> npm run build </code></pre>
+4. Prettify: <pre><code> npm run prettify </code></pre>
+5. Lint: <pre><code> npm run lint </code></pre>
+6. Run unit tests: <pre><code> npm run test </code></pre>
+7. Start server: <pre><code> npm run start  </code></pre>
 
 ## Local port and host
 1. The server will listen on port 3000:
@@ -20,7 +20,7 @@ Once your local is running you can pass the URL and values as the example below.
 ####  How to pass URL values 
 http://localhost:3000/api/images?filename=imageName&width=width&height=height
 
-#### Values to pass: Pass one image name below width and height value. 
+#### Values to pass: Pass one image name below including width and height value. 
 - _imageName_:
   - encenadaport
   - fjord
