@@ -1,9 +1,9 @@
 import sizeOf from 'image-size';
 import app from '../../index';
 import { Stats } from 'fs';
-import request from 'supertest';
 import fs from 'fs/promises';
 import path from 'path';
+import request from 'supertest';
 
 describe('Test URL response', () => {
   it('Test 1: responds 400, if filename, heigh, and width not passed', () => {
