@@ -1,6 +1,6 @@
 # Udacity Project One: Image Processing API
-Project Details: Project contains an Image processing Placeholder API and Image Scaling Library using Express, TypeScript, Jasmine, Eslint, and Prettier. 
-End user can pass a file name, image hight and widtt ti display the image.
+Project Details: 
+The project contains an Image processing Placeholder API and Image Scaling Library using Express, TypeScript, Jasmine, Eslint, and Prettier. The end user can pass a file name, image height and width to display the image.
 
 ## To start the project follow the following steps:
 ### 1. Install [Node JS](https://nodejs.org/en) on your machine. 
